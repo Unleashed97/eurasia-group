@@ -17,6 +17,31 @@ body {
     font-family: $family;
 }
 
+// reset
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 // components
 @import 'components/header.scss';
+@import 'components/container.scss';
+@import 'components/nav.scss';
+@import 'components/btn.scss';
 @import 'components/footer.scss';

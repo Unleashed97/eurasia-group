@@ -1,0 +1,51 @@
+.btn {
+    font-family: $family;
+    font-size: 14px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 0;
+    background: none;
+    cursor: pointer;
+
+    &--request {
+        width: 208px;
+        height: 62px;
+        padding: 18px 24px;
+
+        color: #1b1b29;
+
+        background-color: $primary;
+        border: 1px solid transparent;
+
+        transition: 0.3s linear;
+
+        &:hover {
+            border-color: $primary;
+            background-color: transparent;
+            color: $primary;
+
+            svg {
+                .chevron-icon__rect {
+                    fill: $primary;
+                }
+                .chevron-icon__arrow {
+                    stroke: $additional;
+                }
+            }
+        }
+
+        svg {
+            margin-left: 16px;
+
+            .chevron-icon__rect {
+                transition: 0.3s linear;
+            }
+            .chevron-icon__arrow {
+                transition: 0.3s linear;
+            }
+        }
+    }
+}

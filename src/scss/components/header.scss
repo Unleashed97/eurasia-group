@@ -1,2 +1,25 @@
 .header {
+    margin-top: 32px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        margin-right: 50px;
+    }
+
+    &__nav {
+        margin-right: auto;
+    }
+
+    &__contacts {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+
+        color: $primary;
+    }
 }
