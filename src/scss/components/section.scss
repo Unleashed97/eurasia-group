@@ -237,6 +237,31 @@
         }
     }
 
+    &--possibilities {
+        height: 586px;
+
+        background: url('../img/section/possibilities/bg.png') no-repeat;
+        background-position-x: 20%;
+
+        .section__inner {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+
+        .section__header {
+            max-width: 620px;
+        }
+
+        .section__subtitle {
+            margin-bottom: 24px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
     &__inner {
         width: 100%;
         display: flex;
