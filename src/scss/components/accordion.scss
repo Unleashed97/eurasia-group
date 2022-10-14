@@ -1,0 +1,13 @@
+.accordion {
+    max-width: 620px;
+
+    &__panel {
+        display: none;
+
+        margin: 32px 0 48px 48px;
+
+        &.active {
+            display: block;
+        }
+    }
+}

@@ -48,4 +48,29 @@
             }
         }
     }
+
+    &--accordion {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.4;
+
+        transition: 0.3s linear;
+
+        &:hover,
+        &.active {
+            color: $additional;
+
+            .btn__icon path {
+                stroke: $additional;
+            }
+        }
+
+        .btn__icon {
+            margin-right: 24px;
+
+            & path {
+                transition: 0.3s linear;
+            }
+        }
+    }
 }

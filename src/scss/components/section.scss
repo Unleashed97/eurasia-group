@@ -241,6 +241,8 @@
         background: url('../img/section/possibilities/bg.png') no-repeat;
         background-position-x: 15%;
 
+        overflow-x: hidden;
+
         .section__header {
             height: 586px;
             margin-left: auto;
@@ -269,6 +271,7 @@
 
         .section__image {
             width: 979px;
+            display: block;
         }
 
         .section__text-block {
@@ -305,6 +308,18 @@
             .section__subtitle {
                 max-width: 443px;
             }
+        }
+    }
+
+    &--faq {
+        min-height: 665px;
+
+        background: url('../img/section/faq/bg.png') no-repeat;
+        background-position: right 0;
+
+        overflow-x: hidden;
+
+        .section__content {
         }
     }
 
