@@ -12,6 +12,8 @@ const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
     loop: true,
 
+    spaceBetween: 40,
+
     // If we need pagination
     pagination: {
         el: '.swiper-pagination',

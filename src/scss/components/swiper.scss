@@ -50,6 +50,10 @@
         font-weight: 400;
         line-height: 1.4;
     }
+
+    &__image {
+        max-height: 639px;
+    }
 }
 
 // pagination

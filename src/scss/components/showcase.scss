@@ -1,7 +1,6 @@
 .showcase {
     background: $dark-grad;
-
-    min-height: 89vh;
+    max-height: 970px;
 
     &__inner {
         position: relative;
@@ -10,6 +9,32 @@
         width: 100%;
 
         padding-top: 139px;
-        padding-bottom: 195px;
+        padding-bottom: 150px;
+    }
+
+    &__mouse-decor {
+        position: absolute;
+        left: -110px;
+        bottom: 70px;
+
+        width: 24px;
+        height: 120px;
+
+        display: flex;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            bottom: 0;
+
+            display: block;
+            width: 1px;
+            height: 80px;
+
+            background-color: $primary;
+            opacity: 0.1;
+        }
     }
 }
