@@ -59,8 +59,50 @@
         }
     }
 
+    &--advantages {
+        max-height: 844px;
+        padding-bottom: 180px;
+
+        background: url('../img/section/advantages/bg.png') no-repeat;
+        background-position: left 0;
+        background-size: contain;
+
+        .section__header {
+            margin-bottom: 67px;
+        }
+
+        .section__content {
+            max-width: 908px;
+            margin-left: 326px;
+
+            display: grid;
+            grid-template-columns: repeat(3, 260px);
+            grid-auto-rows: auto;
+            gap: 65px;
+        }
+    }
+
     &__inner {
+        width: 100%;
         display: flex;
         flex-direction: column;
+    }
+
+    &__header {
+        max-width: 698px;
+
+        color: $secondary;
+    }
+
+    &__title {
+        margin-bottom: 28px;
+        font-size: 48px;
+        font-weight: 700;
+    }
+
+    &__subtitle {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.4;
     }
 }

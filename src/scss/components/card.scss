@@ -55,6 +55,32 @@
         }
     }
 
+    &--advantages {
+        display: flex;
+
+        // min-height: 206px;
+
+        color: $secondary;
+
+        .card__image {
+            margin-bottom: 24px;
+        }
+
+        .card__title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            flex: 1 0 0;
+        }
+
+        .card__text {
+            font-size: 16px;
+            font-weight: 400;
+
+            flex: 1 0 0;
+        }
+    }
+
     // card text block
     &__text-block {
         grid-row: 2/4;
