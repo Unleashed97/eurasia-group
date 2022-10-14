@@ -82,6 +82,44 @@
         }
     }
 
+    &--assortment {
+        max-height: 1120px;
+
+        padding-bottom: 800px;
+
+        overflow: hidden;
+
+        .section__header {
+            margin-bottom: 62px;
+        }
+
+        .section__content {
+            position: relative;
+
+            display: grid;
+            grid-template-columns: repeat(4, 317px);
+            grid-auto-rows: auto;
+            gap: 1px;
+
+            .decor {
+                position: absolute;
+
+                &--left {
+                    top: 0;
+                    left: -326px;
+                }
+                &--right {
+                    top: -218px;
+                    right: -344px;
+                }
+                &--right-bottom {
+                    bottom: -340px;
+                    right: -303px;
+                }
+            }
+        }
+    }
+
     &__inner {
         width: 100%;
         display: flex;
