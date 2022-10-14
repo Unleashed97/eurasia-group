@@ -219,6 +219,24 @@
         }
     }
 
+    &--lead-manufacturers {
+        .section__inner {
+            height: 656px;
+            background: url('../img/section/lead-manufacturers/forklift.png')
+                no-repeat;
+            background-position-x: right;
+        }
+
+        .section__title {
+            margin-top: 104px;
+            max-width: 441px;
+        }
+
+        .section__subtitle {
+            max-width: 566px;
+        }
+    }
+
     &__inner {
         width: 100%;
         display: flex;
