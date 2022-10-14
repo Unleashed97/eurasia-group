@@ -161,6 +161,25 @@
         }
     }
 
+    &--spare-part {
+        height: 800px;
+        padding-top: 351px;
+
+        background: $dark-grad;
+
+        overflow-x: hidden;
+
+        .section__header {
+            max-width: 760px;
+            color: $primary;
+            margin-bottom: 80px;
+        }
+
+        .brands-line {
+            overflow: auto;
+        }
+    }
+
     &__inner {
         width: 100%;
         display: flex;
