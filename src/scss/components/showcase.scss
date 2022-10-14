@@ -1,0 +1,15 @@
+.showcase {
+    background: $dark-grad;
+
+    min-height: 89vh;
+
+    &__inner {
+        position: relative;
+
+        display: flex;
+        width: 100%;
+
+        padding-top: 139px;
+        padding-bottom: 195px;
+    }
+}
