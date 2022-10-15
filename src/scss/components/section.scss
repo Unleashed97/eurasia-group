@@ -312,12 +312,19 @@
     }
 
     &--faq {
+        position: relative;
+
         min-height: 665px;
 
         background: url('../img/section/faq/bg.png') no-repeat;
         background-position: right 0;
 
-        overflow-x: hidden;
+        // overflow-x: hidden;
+
+        .section__decor {
+            position: absolute;
+            bottom: -160px;
+        }
 
         .section__content {
         }
