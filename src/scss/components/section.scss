@@ -121,8 +121,6 @@
     }
 
     &--brands {
-        padding-bottom: 245px;
-
         transform: translateY(-150px);
 
         .section__header {
@@ -244,6 +242,8 @@
         overflow-x: hidden;
 
         .section__header {
+            margin-top: 22px;
+
             height: 586px;
             margin-left: auto;
 
@@ -320,6 +320,98 @@
         overflow-x: hidden;
 
         .section__content {
+        }
+    }
+
+    &--request {
+        transform: translateY(171px);
+
+        .section__bottom-block {
+            position: absolute;
+            bottom: -80px;
+            left: 0;
+
+            max-width: 814px;
+
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.4;
+            color: rgba($primary, 30%);
+
+            &::before {
+                content: '';
+
+                position: absolute;
+                left: -104px;
+                top: 10px;
+
+                width: 80px;
+                height: 1px;
+
+                background-color: rgba($primary, 20%);
+            }
+        }
+
+        .section__inner {
+            position: relative;
+
+            flex-direction: row;
+            justify-content: space-between;
+
+            height: 446px;
+            padding: 40px 64px 40px;
+
+            color: $primary;
+
+            background-color: $additional;
+            box-shadow: 0px 14px 48px rgba(0, 0, 0, 0.4);
+        }
+
+        .section__image {
+            position: absolute;
+            bottom: 0;
+            left: 286px;
+        }
+
+        .section__text-block {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .section__caption {
+            max-width: 232px;
+            margin-top: 9px;
+
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.4;
+            color: rgba($primary, 30%);
+        }
+
+        .section__header {
+            max-width: 453px;
+            color: $primary;
+        }
+
+        .section__title {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+    }
+
+    &--request-2 {
+        transform: none;
+
+        margin-bottom: 132px;
+
+        .section__bottom-block {
+            color: rgba($secondary, 30%);
+
+            &::before {
+                background-color: rgba($secondary, 20%);
+            }
         }
     }
 
