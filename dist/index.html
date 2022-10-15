@@ -46,7 +46,7 @@
             <div class="header__contacts">
                 <a href="mailto:info@gk-eurasia.ru">info@gk-eurasia.ru</a>
                 <a href="tel:+78122920085">+7 (812) 292 00 85</a>
-                <button type="buttn" class="btn btn--request">
+                <button type="buttn" id="modal-open" class="btn btn--request">
                     Оставить заявку
 
                     <svg class="chevron-icon" width="30" height="30" viewBox="0 0 30 30" fill="none"
@@ -60,6 +60,59 @@
         </div>
     </div>
 </header>
+
+    <!-- modal include -->
+    <div class="modal">
+    <div class="container container--sm">
+        <div class="modal__inner">
+            <button type="button" class="btn modal__close" id="modal-close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18M6 6L18 18" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+            <picture>
+                <source srcset="img/modal/image.webp">
+                <img src="img/modal/image.png" class="modal__image" alt="">
+            </picture>
+
+            <div class="modal__text-block">
+                <h5 class="modal__title">Оставьте заявку</h5>
+                <p class="modal__subtitle">и получите консультацию наших специалистов»</p>
+
+                <form action="#" class="form form--modal">
+                    <input type="text" class="form__input" name="name" placeholder="Ваше имя" required>
+                    <input type="tel" class="form__input" name="tel" placeholder="Ваш телефон" required>
+                    <input type="email" class="form__input" name="mail" placeholder="Ваша почта" required>
+
+                    <div class="form__group">
+                        <label class="form__label" for="checkbox">
+                            <input type="checkbox" id="checkbox" class="form__checkbox" required>
+                            <span class="form__checkfield">
+                            </span>
+                            <p class="form__label-text">
+                                Нажимая на кнопку вы соглашаетесь на обработку данных в соответствии с <a
+                                    href="#">Политикой
+                                    конфиденциальности</a>
+                            </p>
+                        </label>
+
+                        <button type="submit" class="btn btn--request">
+                            Отправить
+                            <svg class="chevron-icon" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect class="chevron-icon__rect" width="30" height="30" rx="15" fill="#2431D8" />
+                                <path class="chevron-icon__arrow" d="M13 19L17 15L13 11" stroke="white" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
 
     <!-- main -->
     <main>

@@ -4,6 +4,10 @@
     padding: 0 15px;
     margin: 0 auto;
 
+    &--sm {
+        max-width: 1160px;
+    }
+
     &--lg {
         max-width: 1920px;
         padding: 0;

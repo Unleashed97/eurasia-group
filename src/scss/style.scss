@@ -39,6 +39,13 @@ a {
     color: inherit;
 }
 
+.fixed {
+    position: fixed;
+    inset: 0;
+
+    overflow-y: scroll;
+}
+
 // components
 @import 'components/header.scss';
 @import 'components/container.scss';
@@ -50,4 +57,5 @@ a {
 @import 'components/card.scss';
 @import 'components/accordion.scss';
 @import 'components/form.scss';
+@import 'components/modal.scss';
 @import 'components/footer.scss';

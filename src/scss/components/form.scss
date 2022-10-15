@@ -5,6 +5,22 @@
     flex-direction: column;
     gap: 8px;
 
+    &--modal {
+        max-width: 100%;
+
+        .form__label {
+            max-width: 274px;
+            padding: 0;
+        }
+    }
+
+    &__group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-top: 12px;
+    }
     &__input {
         padding: 20px 20px 20px 24px;
 
@@ -75,5 +91,9 @@
 
             display: none;
         }
+    }
+
+    .btn--request {
+        width: 179px;
     }
 }
