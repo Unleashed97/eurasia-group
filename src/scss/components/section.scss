@@ -2,7 +2,7 @@
     &--types {
         max-height: 1084px;
 
-        margin-bottom: 96px;
+        margin-bottom: -138px;
 
         transform: translateY(-234px);
 
@@ -122,6 +122,8 @@
 
     &--brands {
         transform: translateY(-150px);
+
+        margin-bottom: -21px;
 
         .section__header {
             max-width: 730px;
@@ -331,8 +333,6 @@
     }
 
     &--request {
-        transform: translateY(171px);
-
         .section__bottom-block {
             position: absolute;
             bottom: -80px;
@@ -408,9 +408,13 @@
         }
     }
 
-    &--request-2 {
-        transform: none;
+    &--request-1 {
+        transform: translateY(171px);
 
+        margin-top: -171px;
+    }
+
+    &--request-2 {
         margin-bottom: 132px;
 
         .section__bottom-block {
