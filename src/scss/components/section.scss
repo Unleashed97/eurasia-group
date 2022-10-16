@@ -458,7 +458,9 @@
     }
 
     .section--lead-manufacturers {
-        background-image: url('../img/section/lead-manufacturers/forklift.png');
+        .section__inner {
+            background-image: url('../img/section/lead-manufacturers/forklift.png');
+        }
     }
 
     .section--possibilities {
@@ -476,7 +478,9 @@
     }
 
     .section--lead-manufacturers {
-        background-image: url('../img/section/lead-manufacturers/forklift.webp');
+        .section__inner {
+            background-image: url('../img/section/lead-manufacturers/forklift.webp');
+        }
     }
 
     .section--possibilities {
