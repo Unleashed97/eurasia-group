@@ -63,7 +63,8 @@
         max-height: 844px;
         padding-bottom: 180px;
 
-        background: url('../img/section/advantages/bg.png') no-repeat;
+        // bgi set bottom
+        background-repeat: no-repeat;
         background-position: left 0;
         background-size: contain;
 
@@ -222,8 +223,9 @@
     &--lead-manufacturers {
         .section__inner {
             height: 656px;
-            background: url('../img/section/lead-manufacturers/forklift.png')
-                no-repeat;
+
+            // bgi set bottom
+            background-repeat: no-repeat;
             background-position-x: right;
         }
 
@@ -238,7 +240,7 @@
     }
 
     &--possibilities {
-        background: url('../img/section/possibilities/bg.png') no-repeat;
+        background-repeat: no-repeat;
         background-position-x: 15%;
 
         overflow-x: hidden;
@@ -318,7 +320,7 @@
 
         min-height: 665px;
 
-        background: url('../img/section/faq/bg.png') no-repeat;
+        background-repeat: no-repeat;
         background-position: right 0;
 
         // overflow-x: hidden;
@@ -326,9 +328,6 @@
         .section__decor {
             position: absolute;
             bottom: -160px;
-        }
-
-        .section__content {
         }
     }
 
@@ -448,5 +447,43 @@
         font-size: 16px;
         font-weight: 400;
         line-height: 1.4;
+    }
+}
+
+// webp support
+
+.no-webp {
+    .section--advantages {
+        background-image: url('../img/section/advantages/bg.png');
+    }
+
+    .section--lead-manufacturers {
+        background-image: url('../img/section/lead-manufacturers/forklift.png');
+    }
+
+    .section--possibilities {
+        background-image: url('../img/section/possibilities/bg.png');
+    }
+
+    .section--faq {
+        background-image: url('../img/section/faq/bg.png');
+    }
+}
+
+.webp {
+    .section--advantages {
+        background-image: url('../img/section/advantages/bg.webp');
+    }
+
+    .section--lead-manufacturers {
+        background-image: url('../img/section/lead-manufacturers/forklift.webp');
+    }
+
+    .section--possibilities {
+        background-image: url('../img/section/possibilities/bg.webp');
+    }
+
+    .section--faq {
+        background-image: url('../img/section/faq/bg.webp');
     }
 }
