@@ -1,6 +1,8 @@
 .showcase {
     background: $dark-grad;
-    max-height: 970px;
+    // max-height: 970px;
+
+    overflow-x: hidden;
 
     &__inner {
         position: relative;
@@ -10,6 +12,14 @@
 
         padding-top: 139px;
         padding-bottom: 150px;
+
+        @media (max-width: $xlg) {
+            padding: 139px 60px 150px;
+        }
+
+        @media (max-width: $sm) {
+            padding: 139px 0 50px;
+        }
     }
 
     &__mouse-decor {
@@ -21,6 +31,10 @@
         height: 120px;
 
         display: flex;
+
+        @media (max-width: $xlg) {
+            display: none;
+        }
 
         &::after {
             content: '';

@@ -45,6 +45,10 @@
         line-height: 1.4;
         color: #80bbff;
 
+        @media (max-width: $sm) {
+            font-size: 10px;
+        }
+
         a {
             color: $primary;
 
@@ -56,6 +60,10 @@
 
     &__label-text {
         max-width: 244px;
+
+        @media (max-width: $sm) {
+            max-width: 200px;
+        }
     }
 
     &__checkbox {

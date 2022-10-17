@@ -11,14 +11,26 @@
     transform: translateY(-50%);
 
     cursor: pointer;
+
+    @media (max-width: $sm) {
+        display: none;
+    }
 }
 
 .swiper-btn--prev {
     left: -112px;
+
+    @media (max-width: $xlg) {
+        left: 0;
+    }
 }
 
 .swiper-btn--next {
     right: -112px;
+
+    @media (max-width: $xlg) {
+        right: 0;
+    }
 
     .swiper-btn-icon {
         transform: rotate(180deg);
@@ -33,9 +45,19 @@
 
     padding-bottom: 37px;
 
+    @media (max-width: $lg) {
+        padding-top: 50px;
+        flex-direction: column;
+        gap: 30px;
+    }
+
     &__text-block {
         max-width: 500px;
         color: $primary;
+
+        @media (max-width: $lg) {
+            max-width: 100%;
+        }
     }
 
     &__title {
@@ -43,6 +65,10 @@
 
         font-size: 48px;
         font-weight: 700;
+
+        @media (max-width: $sm) {
+            font-size: 35px;
+        }
     }
 
     &__subtitle {
@@ -53,6 +79,17 @@
 
     &__image {
         max-height: 639px;
+
+        img {
+            display: block;
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: $lg) {
+            max-width: 50%;
+        }
     }
 }
 
@@ -61,6 +98,10 @@
     display: flex;
     justify-content: flex-end;
     gap: 32px;
+
+    @media (max-width: $sm) {
+        justify-content: center;
+    }
 }
 
 .swiper-pagination-bullet {

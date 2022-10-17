@@ -23,40 +23,49 @@
                 </picture>
             </a>
 
-            <nav class="nav header__nav">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">
-                            Ассортимент
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">
-                            О нас
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">
-                            Вопрос-ответ
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="header__nav-wrapper">
+                <nav class="nav header__nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                Ассортимент
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                О нас
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                Вопрос-ответ
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
 
-            <div class="header__contacts">
-                <a href="mailto:info@gk-eurasia.ru">info@gk-eurasia.ru</a>
-                <a href="tel:+78122920085">+7 (812) 292 00 85</a>
-                <button type="button" id="modal-open" class="btn btn--request">
-                    Оставить заявку
+                <div class="header__contacts">
+                    <a href="mailto:info@gk-eurasia.ru">info@gk-eurasia.ru</a>
+                    <a href="tel:+78122920085">+7 (812) 292 00 85</a>
+                    <button type="button" id="modal-open" class="btn btn--request">
+                        Оставить заявку
 
-                    <svg class="chevron-icon" width="30" height="30" viewBox="0 0 30 30" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <rect class="chevron-icon__rect" width="30" height="30" rx="15" fill="#2431D8" />
-                        <path class="chevron-icon__arrow" d="M13 19L17 15L13 11" stroke="white" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </button>
+                        <svg class="chevron-icon" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect class="chevron-icon__rect" width="30" height="30" rx="15" fill="#2431D8" />
+                            <path class="chevron-icon__arrow" d="M13 19L17 15L13 11" stroke="white" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
             </div>
+
+
+            <button type="button" class="burger">
+                <span class="burger__item"></span>
+                <span class="burger__item"></span>
+                <span class="burger__item"></span>
+            </button>
         </div>
     </div>
 </header>
@@ -128,7 +137,6 @@
 
                     </div>
 
-                    <!-- If we need navigation buttons -->
                     <div class="swiper-btn swiper-btn--prev">
                         <svg class="swiper-btn-icon" width="48" height="48" viewBox="0 0 48 48" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -165,9 +173,9 @@
                                     </p>
                                 </div>
 
-                                <picture>
+                                <picture class="swiper-slide__image">
                                     <source srcset="img/swiper/2.webp">
-                                    <img src="img/swiper/2.png" class="swiper-slide__image" alt="двигатель">
+                                    <img src="img/swiper/2.png" alt="двигатель">
                                 </picture>
 
                             </div>
@@ -181,9 +189,9 @@
                                     </p>
                                 </div>
 
-                                <picture>
+                                <picture class="swiper-slide__image">
                                     <source srcset="img/swiper/2.webp">
-                                    <img src="img/swiper/2.png" class="swiper-slide__image" alt="двигатель">
+                                    <img src="img/swiper/2.png" alt="двигатель">
                                 </picture>
                             </div>
                             <div class="swiper-slide">
@@ -196,9 +204,9 @@
                                     </p>
                                 </div>
 
-                                <picture>
+                                <picture class="swiper-slide__image">
                                     <source srcset="img/swiper/2.webp">
-                                    <img src="img/swiper/2.png" class="swiper-slide__image" alt="двигатель">
+                                    <img src="img/swiper/2.png" alt="двигатель">
                                 </picture>
                             </div>
                             <div class="swiper-slide">
@@ -211,9 +219,9 @@
                                     </p>
                                 </div>
 
-                                <picture>
+                                <picture class="swiper-slide__image">
                                     <source srcset="img/swiper/2.webp">
-                                    <img src="img/swiper/2.png" class="swiper-slide__image" alt="двигатель">
+                                    <img src="img/swiper/2.png" alt="двигатель">
                                 </picture>
                             </div>
                         </div>
@@ -255,10 +263,14 @@
                                 </picture>
                             </div>
 
-                            <h5 class="card__title">Для строительной <br>
-                                техники</h5>
+                            <div class="card__text-wrapper">
+                                <h5 class="card__title">Для строительной <br>
+                                    техники
+                                </h5>
 
-                            <img src="img/icons/arrow-right.png" class="card__icon" alt="стрелка вправо">
+                                <img src="img/icons/arrow-right.png" class="card__icon" alt="стрелка вправо">
+                            </div>
+
                         </article>
                         <article class="card card--types">
                             <div class="card__image">
@@ -269,10 +281,13 @@
                                 </picture>
                             </div>
 
-                            <h5 class="card__title">Для портовой <br>
-                                техники</h5>
+                            <div class="card__text-wrapper">
+                                <h5 class="card__title">Для портовой <br>
+                                    техники</h5>
 
-                            <img src="img/icons/arrow-right.png" class="card__icon" alt="стрелка вправо">
+                                <img src="img/icons/arrow-right.png" class="card__icon" alt="стрелка вправо">
+                            </div>
+
                         </article>
                         <article class="card card--types">
                             <div class="card__image">
@@ -282,10 +297,13 @@
                                 </picture>
                             </div>
 
-                            <h5 class="card__title">Для горнодобывающий <br>
-                                и шахтной</h5>
+                            <div class="card__text-wrapper">
+                                <h5 class="card__title">Для горнодобывающий <br>
+                                    и шахтной</h5>
 
-                            <img src="img/icons/arrow-right.png" class="card__icon" alt="стрелка вправо">
+                                <img src="img/icons/arrow-right.png" class="card__icon" alt="стрелка вправо">
+                            </div>
+
                         </article>
                         <article class="card card--types">
                             <div class="card__image">
@@ -295,10 +313,12 @@
                                 </picture>
                             </div>
 
-                            <h5 class="card__title">Для складской <br>
-                                техники</h5>
+                            <div class="card__text-wrapper">
+                                <h5 class="card__title">Для складской <br>
+                                    техники</h5>
 
-                            <img src="img/icons/arrow-right.png" class="card__icon" alt="стрелка вправо">
+                                <img src="img/icons/arrow-right.png" class="card__icon" alt="стрелка вправо">
+                            </div>
                         </article>
                         <article class="card card--types">
                             <div class="card__image">
@@ -308,10 +328,12 @@
                                 </picture>
                             </div>
 
-                            <h5 class="card__title">Для дорожно- <br>
-                                строительной </h5>
+                            <div class="card__text-wrapper">
+                                <h5 class="card__title">Для дорожно- <br>
+                                    строительной </h5>
 
-                            <img src="img/icons/arrow-right.png" class="card__icon" alt="стрелка вправо">
+                                <img src="img/icons/arrow-right.png" class="card__icon" alt="стрелка вправо">
+                            </div>
                         </article>
                         <article class="card card--types">
                             <div class="card__image">
@@ -322,10 +344,12 @@
                                 </picture>
                             </div>
 
-                            <h5 class="card__title">Для сельско- <br>
-                                хозяйственной
-                            </h5>
-                            <img src="img/icons/arrow-right.png" class="card__icon" alt="стрелка вправо">
+                            <div class="card__text-wrapper">
+                                <h5 class="card__title">Для сельско- <br>
+                                    хозяйственной
+                                </h5>
+                                <img src="img/icons/arrow-right.png" class="card__icon" alt="стрелка вправо">
+                            </div>
                         </article>
                         <article class="card card--types">
                             <div class="card__image">
@@ -335,10 +359,12 @@
                                 </picture>
                             </div>
 
-                            <h5 class="card__title">Для аэропортной <br>
-                                техники
-                            </h5>
-                            <img src="img/icons/arrow-right.png" class="card__icon" alt="стрелка вправо">
+                            <div class="card__text-wrapper">
+                                <h5 class="card__title">Для аэропортной <br>
+                                    техники
+                                </h5>
+                                <img src="img/icons/arrow-right.png" class="card__icon" alt="стрелка вправо">
+                            </div>
                         </article>
                         <article class="card card--types">
                             <div class="card__image">
@@ -348,10 +374,12 @@
                                 </picture>
                             </div>
 
-                            <h5 class="card__title">Для транспортной <br>
-                                техники
-                            </h5>
-                            <img src="img/icons/arrow-right.png" class="card__icon" alt="стрелка вправо">
+                            <div class="card__text-wrapper">
+                                <h5 class="card__title">Для транспортной <br>
+                                    техники
+                                </h5>
+                                <img src="img/icons/arrow-right.png" class="card__icon" alt="стрелка вправо">
+                            </div>
                         </article>
                         <article class="card card--types">
                             <div class="card__image">
@@ -361,10 +389,12 @@
                                 </picture>
                             </div>
 
-                            <h5 class="card__title">Для лесной <br>
-                                техники
-                            </h5>
-                            <img src="img/icons/arrow-right.png" class="card__icon" alt="стрелка вправо">
+                            <div class="card__text-wrapper">
+                                <h5 class="card__title">Для лесной <br>
+                                    техники
+                                </h5>
+                                <img src="img/icons/arrow-right.png" class="card__icon" alt="стрелка вправо">
+                            </div>
                         </article>
                         <article class="card card--types">
                             <div class="card__image">
@@ -374,10 +404,12 @@
                                 </picture>
                             </div>
 
-                            <h5 class="card__title">Для морской <br>
-                                техники
-                            </h5>
-                            <img src="img/icons/arrow-right.png" class="card__icon" alt="стрелка вправо">
+                            <div class="card__text-wrapper">
+                                <h5 class="card__title">Для морской <br>
+                                    техники
+                                </h5>
+                                <img src="img/icons/arrow-right.png" class="card__icon" alt="стрелка вправо">
+                            </div>
                         </article>
                         <div class="card__text-block">
                             <img src="img/icons/info-circle.png" class="card__text-block-icon" alt="">
@@ -399,76 +431,78 @@
         </section>
 
         <!-- section advantages -->
-        <section class="section section--advantages">
-            <div class="container">
-                <div class="section__inner">
-                    <div class="section__header">
-                        <h3 class="section__title">Наши преимущества</h3>
-                        <p class="section__subtitle">
-                            Мы твёрдо знаем, что успех нашей компании прямо пропорционален успеху Вашей. Какие бы не
-                            были сложные времена, мы продолжаем бесперебойно работать на Ваш успех, предлагая лучшие
-                            решения и сроки</p>
-                    </div>
-                    <div class="section__content">
-                        <article class="card card--advantages">
-                            <picture>
-                                <source srcset="img/section/advantages/1.webp">
-                                <img src="img/section/advantages/1.png" class="card__image" alt="календарь">
-                            </picture>
+        <div class="container container--lg">
+            <section class="section section--advantages">
+                <div class="container">
+                    <div class="section__inner">
+                        <div class="section__header">
+                            <h3 class="section__title">Наши преимущества</h3>
+                            <p class="section__subtitle">
+                                Мы твёрдо знаем, что успех нашей компании прямо пропорционален успеху Вашей. Какие бы не
+                                были сложные времена, мы продолжаем бесперебойно работать на Ваш успех, предлагая лучшие
+                                решения и сроки</p>
+                        </div>
+                        <div class="section__content">
+                            <article class="card card--advantages">
+                                <picture>
+                                    <source srcset="img/section/advantages/1.webp">
+                                    <img src="img/section/advantages/1.png" class="card__image" alt="календарь">
+                                </picture>
 
-                            <h6 class="card__title">Лучшие сроки доставки</h6>
-                            <p class="card__text">от 3х дней на доставку товара</p>
-                        </article>
-                        <article class="card card--advantages">
-                            <picture>
-                                <source srcset="img/section/advantages/2.webp">
-                                <img src="img/section/advantages/2.png" class="card__image" alt="коробка и линза">
-                            </picture>
+                                <h6 class="card__title">Лучшие сроки доставки</h6>
+                                <p class="card__text">от 3х дней на доставку товара</p>
+                            </article>
+                            <article class="card card--advantages">
+                                <picture>
+                                    <source srcset="img/section/advantages/2.webp">
+                                    <img src="img/section/advantages/2.png" class="card__image" alt="коробка и линза">
+                                </picture>
 
-                            <h6 class="card__title">Большой выбор</h6>
-                            <p class="card__text">более 17000 наименований комплектующих</p>
-                        </article>
-                        <article class="card card--advantages">
-                            <picture>
-                                <source srcset="img/section/advantages/3.webp">
-                                <img src="img/section/advantages/3.png" class="card__image" alt="скидки">
-                            </picture>
+                                <h6 class="card__title">Большой выбор</h6>
+                                <p class="card__text">более 17000 наименований комплектующих</p>
+                            </article>
+                            <article class="card card--advantages">
+                                <picture>
+                                    <source srcset="img/section/advantages/3.webp">
+                                    <img src="img/section/advantages/3.png" class="card__image" alt="скидки">
+                                </picture>
 
-                            <h6 class="card__title">Оптимальные цены</h6>
-                            <p class="card__text">мы работаем напрямую
-                                с производителями</p>
-                        </article>
-                        <article class="card card--advantages">
-                            <picture>
-                                <source srcset="img/section/advantages/4.webp">
-                                <img src="img/section/advantages/4.png" class="card__image" alt="секундомер">
-                            </picture>
+                                <h6 class="card__title">Оптимальные цены</h6>
+                                <p class="card__text">мы работаем напрямую
+                                    с производителями</p>
+                            </article>
+                            <article class="card card--advantages">
+                                <picture>
+                                    <source srcset="img/section/advantages/4.webp">
+                                    <img src="img/section/advantages/4.png" class="card__image" alt="секундомер">
+                                </picture>
 
-                            <h6 class="card__title">Оперативная обработка заявки</h6>
-                            <p class="card__text">начинаем подбор сразу же при поступлении заявки</p>
-                        </article>
-                        <article class="card card--advantages">
-                            <picture>
-                                <source srcset="img/section/advantages/5.webp">
-                                <img src="img/section/advantages/5.png" class="card__image" alt="сертификат">
-                            </picture>
+                                <h6 class="card__title">Оперативная обработка заявки</h6>
+                                <p class="card__text">начинаем подбор сразу же при поступлении заявки</p>
+                            </article>
+                            <article class="card card--advantages">
+                                <picture>
+                                    <source srcset="img/section/advantages/5.webp">
+                                    <img src="img/section/advantages/5.png" class="card__image" alt="сертификат">
+                                </picture>
 
-                            <h6 class="card__title">Оригинальные запчасти</h6>
-                            <p class="card__text">только проверенная продукция высокого качества</p>
-                        </article>
-                        <article class="card card--advantages">
-                            <picture>
-                                <source srcset="img/section/advantages/6.webp">
-                                <img src="img/section/advantages/6.png" class="card__image" alt="путь">
-                            </picture>
+                                <h6 class="card__title">Оригинальные запчасти</h6>
+                                <p class="card__text">только проверенная продукция высокого качества</p>
+                            </article>
+                            <article class="card card--advantages">
+                                <picture>
+                                    <source srcset="img/section/advantages/6.webp">
+                                    <img src="img/section/advantages/6.png" class="card__image" alt="путь">
+                                </picture>
 
-                            <h6 class="card__title">Множество каналов поставок</h6>
-                            <p class="card__text">привезём все необходимое, даже если этого нет в России</p>
-                        </article>
+                                <h6 class="card__title">Множество каналов поставок</h6>
+                                <p class="card__text">привезём все необходимое, даже если этого нет в России</p>
+                            </article>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
         <!-- section assortment -->
         <section class="section section--assortment">
@@ -832,9 +866,9 @@
                         </div>
                     </div>
 
-                    <picture>
+                    <picture class="section__image">
                         <source srcset="img/section/request/1.webp">
-                        <img src="img/section/request/1.png" class="section__image" alt="манипулятор">
+                        <img src="img/section/request/1.png" alt="манипулятор">
                     </picture>
 
                     <form action="#" class="form">
@@ -875,37 +909,38 @@
         </section>
 
         <!-- section spare part -->
-        <section class="section section--spare-part">
-
-            <div class="section__inner">
-                <div class="container">
-                    <div class="section__header">
-                        <h3 class="section__title">Какие запчасти вам подходят?</h3>
-                        <p class="section__subtitle">
-                            На протяжении многих лет мы тесно сотрудничаем с производителями запасных частей
-                            и оборудования, что дает нам конкурентное преимущество в поставке высококачественных
-                            запасных частей от ведущих мировых производителей
-                        </p>
+        <div class="container container--lg">
+            <section class="section section--spare-part">
+                <div class="section__inner">
+                    <div class="container">
+                        <div class="section__header">
+                            <h3 class="section__title">Какие запчасти вам подходят?</h3>
+                            <p class="section__subtitle">
+                                На протяжении многих лет мы тесно сотрудничаем с производителями запасных частей
+                                и оборудования, что дает нам конкурентное преимущество в поставке высококачественных
+                                запасных частей от ведущих мировых производителей
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container container--lg">
+                        <div class="section__content">
+                            <picture>
+                                <source srcset="img/section/spare-part/line.webp">
+                                <img src="img/section/spare-part/line.png" class="brands-line" alt="бренды">
+                            </picture>
+                        </div>
                     </div>
                 </div>
-                <div class="container container--lg">
-                    <div class="section__content">
-                        <picture>
-                            <source srcset="img/section/spare-part/line.webp">
-                            <img src="img/section/spare-part/line.png" class="brands-line" alt="бренды">
-                        </picture>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
         <!-- section original spare parts -->
         <section class="section section--original-spare-parts">
             <div class="container container--lg">
                 <div class="section__inner">
-                    <picture>
+                    <picture class="section__image">
                         <source srcset="img/section/original-spare-parts/img.webp">
-                        <img src="img/section/original-spare-parts/img.jpg" class="section__image"
+                        <img src="img/section/original-spare-parts/img.jpg"
                             alt="экскаватор загружает породу в самосвал">
                     </picture>
                     <div class="section__header">
@@ -936,6 +971,11 @@
                             выборе оптимальных решений для обслуживания своего парка техники
                         </p>
                     </div>
+
+                    <picture class="section__image">
+                        <source srcset="img/section/lead-manufacturers/forklift.webp">
+                        <img src="img/section/lead-manufacturers/forklift.png" alt="грузоподъемник">
+                    </picture>
                 </div>
             </div>
         </section>
@@ -955,9 +995,9 @@
                         </div>
                     </div>
 
-                    <picture>
+                    <picture class="section__image">
                         <source srcset="img/section/request/2.webp">
-                        <img src="img/section/request/2.png" class="section__image" alt="манипулятор">
+                        <img src="img/section/request/2.png" alt="манипулятор">
                     </picture>
 
                     <form action="#" class="form">
@@ -997,164 +1037,174 @@
         </section>
 
         <!-- section in our possibilies -->
-        <section class="section section--possibilities">
-            <div class="section__inner">
-                <div class="container">
-                    <div class="section__header">
-                        <h3 class="section__title">В наших возможностях</h3>
-                        <p class="section__subtitle">
-                            Снабдить вас требуемыми запасными частями и
-                            комплектующими для спецтехники, соблюдая параметры высокого качества и
-                            премиальность брендов
-                        </p>
-                        <p class="section__subtitle">
-                            Мы экспортируем самый большой ассортимент высококачественных и оригинальных
-                            запасных частей для тяжелого оборудования и спецтехники. У нас есть опыт и
-                            возможности, чтобы предоставить все необходимые запчасти по лучшим ценам
-                        </p>
-                        <p class="section__subtitle">
-                            Запасные части, которые мы поставляем, отличаются высоким качеством, так как они
-                            поступают напрямую от производителя
-                        </p>
-                    </div>
-                </div>
-
-                <div class="section__content">
-                    <picture>
-                        <source srcset="img/section/possibilities/image.webp">
-                        <img src="img/section/possibilities/image.jpg" class="section__image"
-                            alt="тягач с экскаватором">
-                    </picture>
-
-                    <div class="section__text-block">
-                        <div class="section__text-about">
-                            <p class="section__subtitle">
-                                Сотрудники EURASIA GROUP - высококлассные профессионалы с многолетним опытом
-                                работы в области техники и механизмов, менеджмента и логистики, которые всегда
-                                помогут Вам в вопросе выбора запчастей, оформлении заказа и согласуют с вами
-                                самый лучший вариант доставки выбранного товара
-                            </p>
-                            <p class="section__text-about-title">Каждый член команды
-                                EURASIA GROUP</p>
-                            <p class="section__subtitle">
-                                работает в своём направлении марок
-                                спецтехники, что позволяет грамотно и в кратчайшие сроки решить любой клиентский
-                                запрос
-                            </p>
-                        </div>
-                        <div class="section__info-block">
-                            <img src="img/icons/info-circle.png" alt="" class="section__icon">
-
-                            <p class="section__subtitle">
-                                Соблюдение высоких этических принципов и полная самоотдача каждого сотрудника
-                                нашей команды - залог нашего успеха и эффективности
-                            </p>
+        <div class="container container--lg">
+            <section class="section section--possibilities">
+                <div class="section__inner">
+                    <div class="container">
+                        <div class="section__top">
+                            <picture class="section__image">
+                                <source srcset="img/section/possibilities/bg.webp">
+                                <img src="img/section/possibilities/bg.png" alt="двигатель">
+                            </picture>
+                            <div class="section__header">
+                                <h3 class="section__title">В наших возможностях</h3>
+                                <p class="section__subtitle">
+                                    Снабдить вас требуемыми запасными частями и
+                                    комплектующими для спецтехники, соблюдая параметры высокого качества и
+                                    премиальность брендов
+                                </p>
+                                <p class="section__subtitle">
+                                    Мы экспортируем самый большой ассортимент высококачественных и оригинальных
+                                    запасных частей для тяжелого оборудования и спецтехники. У нас есть опыт и
+                                    возможности, чтобы предоставить все необходимые запчасти по лучшим ценам
+                                </p>
+                                <p class="section__subtitle">
+                                    Запасные части, которые мы поставляем, отличаются высоким качеством, так как они
+                                    поступают напрямую от производителя
+                                </p>
+                            </div>
                         </div>
                     </div>
+
+                    <div class="section__content">
+                        <picture class="section__image">
+                            <source srcset="img/section/possibilities/image.webp">
+                            <img src="img/section/possibilities/image.jpg" alt="тягач с экскаватором">
+                        </picture>
+
+                        <div class="section__text-block">
+                            <div class="section__text-about">
+                                <p class="section__subtitle">
+                                    Сотрудники EURASIA GROUP - высококлассные профессионалы с многолетним опытом
+                                    работы в области техники и механизмов, менеджмента и логистики, которые всегда
+                                    помогут Вам в вопросе выбора запчастей, оформлении заказа и согласуют с вами
+                                    самый лучший вариант доставки выбранного товара
+                                </p>
+                                <p class="section__text-about-title">Каждый член команды
+                                    EURASIA GROUP</p>
+                                <p class="section__subtitle">
+                                    работает в своём направлении марок
+                                    спецтехники, что позволяет грамотно и в кратчайшие сроки решить любой клиентский
+                                    запрос
+                                </p>
+                            </div>
+                            <div class="section__info-block">
+                                <img src="img/icons/info-circle.png" alt="" class="section__icon">
+
+                                <p class="section__subtitle">
+                                    Соблюдение высоких этических принципов и полная самоотдача каждого сотрудника
+                                    нашей команды - залог нашего успеха и эффективности
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
         <!-- section faq -->
-        <section class="section section--faq">
-            <div class="section__decor">
-                <picture>
+        <div class="container container--lg">
+            <section class="section section--faq">
+
+                <picture class="section__decor">
                     <source srcset="img/section/faq/decor.webp">
                     <img src="img/section/faq/decor.png" alt="">
                 </picture>
-            </div>
-            <div class="container">
-                <div class="section__inner">
-                    <div class="section__header">
-                        <h3 class="section__title">Часто задаваемые вопросы</h3>
-                    </div>
-                    <div class="section__content">
-                        <div class="accordion">
-                            <button type="button" class="btn btn--accordion active">
-                                <span class="btn__icon-wrapper">
-                                    <svg class="btn__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                </span>
 
-                                Как я могу заказать запчасти в EURASIA GROUP?
-                            </button>
+                <div class="container">
+                    <div class="section__inner">
+                        <div class="section__header">
+                            <h3 class="section__title">Часто задаваемые вопросы</h3>
+                        </div>
+                        <div class="section__content">
+                            <div class="accordion">
+                                <button type="button" class="btn btn--accordion active">
+                                    <span class="btn__icon-wrapper">
+                                        <svg class="btn__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
 
-                            <div class="accordion__panel active">
-                                <p class="accordion__text">
-                                    Отправьте на нашу электронную почту <a
-                                        href="mailto:info@gk-eurasia.ru">info@gk-eurasia.ru</a> список требуемых
-                                    комплектующих. Он должен содержать: марку, модель и по возможности артикул
-                                    запчасти, для подбора запчастей для двигателя, вам понадобится номер двигателя.
-                                </p>
-                            </div>
+                                    Как я могу заказать запчасти в EURASIA GROUP?
+                                </button>
 
-                            <button type="button" class="btn btn--accordion">
-                                <span class="btn__icon-wrapper">
-                                    <svg class="btn__icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8 1V15M1 8H15" stroke="#212536" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
+                                <div class="accordion__panel active">
+                                    <p class="accordion__text">
+                                        Отправьте на нашу электронную почту <a
+                                            href="mailto:info@gk-eurasia.ru">info@gk-eurasia.ru</a> список требуемых
+                                        комплектующих. Он должен содержать: марку, модель и по возможности артикул
+                                        запчасти, для подбора запчастей для двигателя, вам понадобится номер двигателя.
+                                    </p>
+                                </div>
 
-                                </span>
+                                <button type="button" class="btn btn--accordion">
+                                    <span class="btn__icon-wrapper">
+                                        <svg class="btn__icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 1V15M1 8H15" stroke="#212536" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
 
-                                Для каких машин мы предлагаем запчасти?
-                            </button>
+                                    </span>
 
-                            <div class="accordion__panel">
-                                <p class="accordion__text">
-                                    EURASIA GROUP предлагает запчасти для всех видов тяжёлой специализированной
-                                    техники, используемой во всех промышленных областях
-                                </p>
-                            </div>
+                                    Для каких машин мы предлагаем запчасти?
+                                </button>
 
-                            <button type="button" class="btn btn--accordion">
-                                <span class="btn__icon-wrapper">
-                                    <svg class="btn__icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8 1V15M1 8H15" stroke="#212536" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </span>
+                                <div class="accordion__panel">
+                                    <p class="accordion__text">
+                                        EURASIA GROUP предлагает запчасти для всех видов тяжёлой специализированной
+                                        техники, используемой во всех промышленных областях
+                                    </p>
+                                </div>
 
-                                Для каких марок машин мы предлагаем запчасти?
-                            </button>
+                                <button type="button" class="btn btn--accordion">
+                                    <span class="btn__icon-wrapper">
+                                        <svg class="btn__icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 1V15M1 8H15" stroke="#212536" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
 
-                            <div class="accordion__panel">
-                                <p class="accordion__text">
-                                    Caterpillar, Komatsu, Kalmar, JCB, Hitachi, Hyundai, Case, New Holland, John Deere,
-                                    Perkins, Deutz, Cummins, Cat, sandvik и многих других
-                                </p>
-                            </div>
-                            <button type="button" class="btn btn--accordion">
-                                <span class="btn__icon-wrapper">
-                                    <svg class="btn__icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8 1V15M1 8H15" stroke="#212536" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </span>
+                                    Для каких марок машин мы предлагаем запчасти?
+                                </button>
 
-                                Каковы сроки доставки запчастей и оборудования?
-                            </button>
+                                <div class="accordion__panel">
+                                    <p class="accordion__text">
+                                        Caterpillar, Komatsu, Kalmar, JCB, Hitachi, Hyundai, Case, New Holland, John
+                                        Deere,
+                                        Perkins, Deutz, Cummins, Cat, sandvik и многих других
+                                    </p>
+                                </div>
+                                <button type="button" class="btn btn--accordion">
+                                    <span class="btn__icon-wrapper">
+                                        <svg class="btn__icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 1V15M1 8H15" stroke="#212536" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
 
-                            <div class="accordion__panel">
-                                <p class="accordion__text">
-                                    EURASIA GROUP имеет свои склады и всегда поддерживает запасы перечня
-                                    комплектующих в наличии, что гарантирует максимально быстрое прибытие заказа к
-                                    покупателю. Ряд комплектующих требует более сложной логистики, так как будет
-                                    привезён или изготовлен специально для вас. Но мы можем однозначно гарантировать
-                                    одно - ваш заказ всегда окажется у вас в максимально копотные сроки.
-                                </p>
+                                    Каковы сроки доставки запчастей и оборудования?
+                                </button>
+
+                                <div class="accordion__panel">
+                                    <p class="accordion__text">
+                                        EURASIA GROUP имеет свои склады и всегда поддерживает запасы перечня
+                                        комплектующих в наличии, что гарантирует максимально быстрое прибытие заказа к
+                                        покупателю. Ряд комплектующих требует более сложной логистики, так как будет
+                                        привезён или изготовлен специально для вас. Но мы можем однозначно гарантировать
+                                        одно - ваш заказ всегда окажется у вас в максимально копотные сроки.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
     <!-- footer include -->
     <footer class="footer">

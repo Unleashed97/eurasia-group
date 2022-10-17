@@ -18,6 +18,13 @@
         display: flex;
 
         justify-content: space-between;
+
+        @media (max-width: $lg) {
+            flex-direction: column;
+            justify-content: flex-start;
+
+            gap: 20px;
+        }
     }
 
     &__cols-item {

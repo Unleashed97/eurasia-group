@@ -5,7 +5,20 @@
     right: 0;
     z-index: 2;
 
-    margin-top: 32px;
+    padding-top: 32px;
+
+    @media (max-width: 1200px) {
+        padding-top: 15px;
+    }
+
+    @media (max-width: $md) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        background: $dark-grad;
+    }
 
     &__inner {
         display: flex;
@@ -15,6 +28,63 @@
 
     &__logo {
         margin-right: 50px;
+
+        @media (max-width: 1200px) {
+            & img {
+                height: 40px;
+            }
+        }
+
+        &.active {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+
+            z-index: 10;
+        }
+    }
+
+    &__nav-wrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 1200px) {
+            position: absolute;
+            inset: 0;
+            z-index: 5;
+
+            padding-top: 100px;
+
+            height: 100vh;
+            width: 100%;
+
+            display: none;
+
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            padding: 0 15px;
+
+            background: $dark-grad;
+
+            color: $secondary;
+
+            &.active {
+                display: flex;
+            }
+
+            .header__nav {
+                margin-right: 0;
+            }
+
+            .nav__list {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
     }
 
     &__nav {
@@ -27,5 +97,13 @@
         gap: 40px;
 
         color: $primary;
+
+        @media (max-width: 1200px) {
+            color: $primary;
+
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
     }
 }

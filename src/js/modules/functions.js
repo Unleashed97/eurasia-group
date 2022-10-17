@@ -45,3 +45,16 @@ export const handleModal = () => {
         }
     })
 }
+
+export const handleBurger = () => {
+    const burgerBtn = document.querySelector('.burger')
+    const navWrapper = document.querySelector('.header__nav-wrapper')
+    const headerLogo = document.querySelector('.header__logo')
+
+    burgerBtn.addEventListener('click', () => {
+        burgerBtn.classList.toggle('active')
+        navWrapper.classList.toggle('active')
+        headerLogo.classList.toggle('active')
+        document.body.classList.toggle('fixed')
+    })
+}

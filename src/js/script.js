@@ -1,6 +1,7 @@
 import * as customFunctions from './modules/functions.js'
 customFunctions.handleAccordion()
 customFunctions.handleModal()
+customFunctions.handleBurger()
 
 // vendors
 import Swiper, { Navigation, Pagination } from 'swiper'
