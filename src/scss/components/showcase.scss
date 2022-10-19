@@ -1,14 +1,17 @@
 .showcase {
     background: $dark-grad;
-    // max-height: 970px;
-
-    overflow-x: hidden;
 
     &__inner {
         position: relative;
 
         display: flex;
+        align-items: center;
         width: 100%;
+        min-height: 90vh;
+
+        max-height: 970px;
+
+        gap: 20px;
 
         padding-top: 139px;
         padding-bottom: 150px;
@@ -17,8 +20,56 @@
             padding: 139px 60px 150px;
         }
 
+        @media (max-width: $lg) {
+            flex-direction: column;
+            gap: 50px;
+        }
+
         @media (max-width: $sm) {
             padding: 139px 0 50px;
+        }
+    }
+
+    &__text-block {
+        max-width: 500px;
+        color: $primary;
+
+        @media (max-width: $lg) {
+            max-width: 100%;
+        }
+    }
+
+    &__title {
+        margin-bottom: 24px;
+
+        font-size: 48px;
+        font-weight: 700;
+        color: $primary;
+
+        @media (max-width: $md) {
+            font-size: 32px;
+        }
+    }
+
+    &__subtitle {
+        font-size: 20px;
+        line-height: 1.4;
+        color: $primary;
+    }
+
+    &__image {
+        @media (max-width: $lg) {
+            max-width: 70%;
+        }
+
+        @media (max-width: $sm) {
+            max-width: 100%;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
         }
     }
 
