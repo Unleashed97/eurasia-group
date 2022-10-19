@@ -243,7 +243,7 @@
             height: 80px;
             width: 7840px;
             overflow: hidden;
-            background: url('../img/section/spare-part/line.png') repeat-x;
+            background-repeat: repeat-x;
 
             animation: bg-slide 60s linear infinite;
         }
@@ -744,6 +744,12 @@
     .section--faq {
         background-image: url('../img/section/faq/bg.png');
     }
+
+    .section--spare-part {
+        .section__content {
+            background-image: url('../img/section/spare-part/line.png');
+        }
+    }
 }
 
 .webp {
@@ -756,5 +762,11 @@
 
     .section--faq {
         background-image: url('../img/section/faq/bg.webp');
+    }
+
+    .section--spare-part {
+        .section__content {
+            background-image: url('../img/section/spare-part/line.webp');
+        }
     }
 }
