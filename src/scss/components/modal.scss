@@ -4,7 +4,7 @@
     z-index: 10;
 
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
 
     display: none;
     align-items: center;
@@ -19,10 +19,15 @@
     &__inner {
         position: relative;
 
-        height: 465px;
+        min-height: 465px;
         padding: 40px 64px;
 
         background-color: $additional;
+
+        @media (max-width: $lg) {
+            display: flex;
+            justify-content: center;
+        }
     }
 
     &__close {
@@ -36,6 +41,14 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
+
+        @media (max-width: $xlg) {
+            max-width: 400px;
+        }
+
+        @media (max-width: $lg) {
+            display: none;
+        }
     }
 
     &__text-block {
@@ -47,6 +60,10 @@
         flex-direction: column;
 
         color: $primary;
+
+        @media (max-width: $lg) {
+            margin-left: 0;
+        }
     }
 
     &__title {
