@@ -58,3 +58,17 @@ export const handleBurger = () => {
         document.body.classList.toggle('fixed')
     })
 }
+
+export const handleMenu = () => {
+    const navLinkList = document.querySelectorAll('.nav__link')
+
+    navLinkList.forEach((link) =>
+        link.addEventListener('click', () => {
+            const attrValue = link.getAttribute('data-id')
+
+            const contentBlock = document.getElementById(`${attrValue}`)
+
+            contentBlock.scrollIntoView({ behavior: 'smooth' })
+        }),
+    )
+}

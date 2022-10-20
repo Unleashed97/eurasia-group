@@ -2,6 +2,7 @@ import * as customFunctions from './modules/functions.js'
 customFunctions.handleAccordion()
 customFunctions.handleModal()
 customFunctions.handleBurger()
+customFunctions.handleMenu()
 
 // support webp check
 
