@@ -170,6 +170,16 @@
                 opacity: 1;
                 min-width: 635px;
             }
+
+            @media (max-width: $sm) {
+                .card__dropdown {
+                    display: none;
+                }
+
+                .card__dropdown--horizontal {
+                    display: none;
+                }
+            }
         }
 
         .card__title {
